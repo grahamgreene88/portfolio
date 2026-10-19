@@ -1,0 +1,27 @@
+---
+title: "2nd place at UBC in National Health Datathon"
+author: "Graham Greene"
+date: 2026-10-06
+image: NHD2026_Team1_presentation_thumbnail.jpg
+---
+[Original LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7513831629178486784/)
+
+This past weekend my team placed 2nd at UBC in the National Health Datathon 2026 led by UofT's Temerty Centre for AI Research and Education in Medicine (T-CAIREM). I really enjoyed working with a group of talented individuals from across health and data-related disciplines.
+
+Our work explored whether biopsy slides can help predict how breast cancer patients respond to pre-surgery therapy. Working with whole-slide images from about 100 patients, we preprocessed the images and extracted embeddings using Phikon, a pathology foundation model. We then reduced those feature embeddings using PCA and combined them with cancer subtype in a logistic regression model to predict pathological complete response. In our experiments, adding image features improved on a baseline that used cancer subtype alone.
+
+My own focus was on whole-slide image processing and extracting embeddings from the foundation model, where I built one of the two pipelines our team developed in parallel. I was impressed with how much a pretrained foundation model let us do with so little data.
+
+The work was done on confidential clinical data in a secure environment so the data and code unfortunately can't be shared.
+
+A big thank you to UBC Data Science and Health (DASH) for hosting the UBC site and to my teammates Vincent Luong, Joseph Lenczowski, April Lee, Daegan Sit, and  Muse Park.
+
+I look forward to participating in more events like this in the future!
+
+```{=html}
+<iframe src="NHD2026_Team1_presentation.pdf" width="100%" height="600px"></iframe>
+```
+
+[Download the PDF](NHD2026_Team1_presentation.pdf)
+
+

@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "2nd place at UBC in National Health Datathon\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\nGraham Greene\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Graham Greene",
+    "section": "",
+    "text": "I am from Ottawa and I completed my undergrad in Biochemical Engineering at Queen’s University. Before my Master’s in Data Science (MDS), I worked for Sanofi (biopharma) at the intersection of data science and vaccine manufacturing. During the MDS program I am looking to deepen my data science knowledge through formal education. This will help equip me to work in more senior data science roles in the healthcare, pharmaceutical, and biomedical fields going forward."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html",
+    "href": "projects/health-datathon/index.html",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "",
+    "text": "Built during the National Health Datathon 2026 (led by T-CAIREM, University of Toronto; UBC site hosted by UBC DASH). Our team placed 2nd at the UBC site. Read more in the blog post."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#overview",
+    "href": "projects/health-datathon/index.html#overview",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "",
+    "text": "Built during the National Health Datathon 2026 (led by T-CAIREM, University of Toronto; UBC site hosted by UBC DASH). Our team placed 2nd at the UBC site. Read more in the blog post."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#problem",
+    "href": "projects/health-datathon/index.html#problem",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "Problem",
+    "text": "Problem\nCan H&E biopsy whole-slide images help predict pathological complete response (pCR) to neoadjuvant (pre-surgery) therapy in breast cancer patients?"
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#approach",
+    "href": "projects/health-datathon/index.html#approach",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "Approach",
+    "text": "Approach\n\nData: whole-slide images from ~100 patients, accessed in a secure environment\nPreprocessing: tissue detection and tiling of whole-slide images\nFeature extraction: tile embeddings from Phikon, a pathology foundation model\nModeling: PCA-reduced embeddings combined with clinical data (including cancer subtype) in a logistic regression model"
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#my-role",
+    "href": "projects/health-datathon/index.html#my-role",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "My role",
+    "text": "My role\nI focused on whole-slide image processing and foundation-model embedding extraction, building one of the two pipelines the team developed in parallel."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#results",
+    "href": "projects/health-datathon/index.html#results",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "Results",
+    "text": "Results\n\n\n\nTable 1: Model performance comparison for predicting pathological complete response\n\n\n\n\n\nModel\nROC-AUC\n\n\n\n\nImages only\n0.704\n\n\nTabular clinical data\n0.856\n\n\nCancer subtype only\n0.858\n\n\nTabular clinical data + images\n0.862\n\n\nCancer subtype + images\n0.882\n\n\n\n\n\n\nImage features alone carried some signal (ROC-AUC 0.70), and adding them to cancer subtype gave the best model (0.882 vs. 0.858 for subtype alone). With roughly 100 patients, these differences are small enough that they would need validation on a larger patient sample. Models were assessed wit 5-fold cross validation on a training set with final performance reported on a held-out test set."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#notes",
+    "href": "projects/health-datathon/index.html#notes",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "Notes",
+    "text": "Notes\nThe work used confidential clinical data, so the data and code can’t be shared."
+  },
+  {
+    "objectID": "projects/health-datathon/index.html#presentation",
+    "href": "projects/health-datathon/index.html#presentation",
+    "title": "Predicting Breast Cancer Treatment Response from Biopsy Slides",
+    "section": "Presentation",
+    "text": "Presentation\n\nDownload the presentation"
+  },
+  {
+    "objectID": "posts/health-datathon/index.html",
+    "href": "posts/health-datathon/index.html",
+    "title": "2nd place at UBC in National Health Datathon",
+    "section": "",
+    "text": "Original LinkedIn post\nThis past weekend my team placed 2nd at UBC in the National Health Datathon 2026 led by UofT’s Temerty Centre for AI Research and Education in Medicine (T-CAIREM). I really enjoyed working with a group of talented individuals from across health and data-related disciplines.\nOur work explored whether biopsy slides can help predict how breast cancer patients respond to pre-surgery therapy. Working with whole-slide images from about 100 patients, we preprocessed the images and extracted embeddings using Phikon, a pathology foundation model. We then reduced those feature embeddings using PCA and combined them with cancer subtype in a logistic regression model to predict pathological complete response. In our experiments, adding image features improved on a baseline that used cancer subtype alone.\nMy own focus was on whole-slide image processing and extracting embeddings from the foundation model, where I built one of the two pipelines our team developed in parallel. I was impressed with how much a pretrained foundation model let us do with so little data.\nThe work was done on confidential clinical data in a secure environment so the data and code unfortunately can’t be shared.\nA big thank you to UBC Data Science and Health (DASH) for hosting the UBC site and to my teammates Vincent Luong, Joseph Lenczowski, April Lee, Daegan Sit, and Muse Park.\nI look forward to participating in more events like this in the future!\n\nDownload the PDF"
+  },
+  {
+    "objectID": "projects/xg-model/index.html",
+    "href": "projects/xg-model/index.html",
+    "title": "End-to-end Expected Goals (xG) NHL Model",
+    "section": "",
+    "text": "Link to deployed app: https://xg-web-app.onrender.com\nThe app may take a minute to wake up, this is expected.\nLink to github repository: https://github.com/grahamgreene88/Expected-Goals-xG-Model\nThis project is an end-to-end machine learning application. The three main components of the project are:\n\nData pipelines that ingest play-by-play data daily from the NHL API and store in an Aiven cloud postgres database\nAn XGBoost ML xG model that was trained shot data from 2019-20 through 2024-25 and evaluted on the 2025-26 holdout test\nStreamlit web app with shot explorer and team-level xG trends deployed to Render web service\n\nFor more detailed information, please visit the README file in the github repository linked above.\n\n\n\nxGF% Chart from the Team xG Trends page of the deployed web app."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Predicting Breast Cancer Treatment Response from Biopsy Slides\n\n\nNational Health Datathon 2026 — 2nd place at UBC\n\n\n\n\n\nOct 6, 2026\n\n\nGraham Greene\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-end Expected Goals (xG) NHL Model\n\n\n\n\n\n\n\n\nSep 12, 2026\n\n\nGraham\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in Ottawa and lived two years abroad in Paris during my early teens. I completed my undegraduate degree in Chemical Engineering at Queen’s Uinversity with a specialization in Biochemical Engineering. After a bioprocess research internship in Montreal, and data science research in my 4th year to predict antibiotic resistance using gene sequence data, I decided I wanted to apply data science to bioprocess engineering. This led me to working as a Process Data Scientist with Sanofi for their vaccine manufacturing operations in Toronto. In this role I performed multivariate analysis to support root-cause investigations, built interactive applications to provide useful predictions and analytics and worked with production data pipelines to bring manufacturing data to users."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in Ottawa and lived two years abroad in Paris during my early teens. I completed my undegraduate degree in Chemical Engineering at Queen’s Uinversity with a specialization in Biochemical Engineering. After a bioprocess research internship in Montreal, and data science research in my 4th year to predict antibiotic resistance using gene sequence data, I decided I wanted to apply data science to bioprocess engineering. This led me to working as a Process Data Scientist with Sanofi for their vaccine manufacturing operations in Toronto. In this role I performed multivariate analysis to support root-cause investigations, built interactive applications to provide useful predictions and analytics and worked with production data pipelines to bring manufacturing data to users."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nI am passionate about using data to build solutions to address one of the world’s greatest challenges - human health. I really enjoy diving deep into data to uncover hidden relationships and trends that can then be leveraged to make useful predictions. I want to take advantage of the growing amount of data in healthcare-related fields to create innovative solutions to improve human health."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nOutside of school and work, I am an active and outdoorsy person. I love to hike and ski so I am very excited about living in Vancouver. I have already hiked a few summits in the North Shore Mountains and look forward to more hikes soon! I also enjoy endurance running and playing team sports like hockey and soccer. This past spring I completed my second half marathon."
+  }
+]

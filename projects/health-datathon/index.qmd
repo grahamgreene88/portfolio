@@ -1,0 +1,55 @@
+---
+title: "Predicting Breast Cancer Treatment Response from Biopsy Slides"
+description: "National Health Datathon 2026 — 2nd place at UBC"
+author: "Graham Greene"
+date: 2026-10-06
+image: NHD2026_Team1_presentation_thumbnail.jpg
+categories: [digital pathology, foundation models, computer vision]
+---
+
+## Overview
+
+Built during the National Health Datathon 2026 (led by T-CAIREM, University of Toronto; UBC site hosted by UBC DASH). Our team placed **2nd at the UBC site**.
+Read more in the [blog post](../../posts/health-datathon/index.qmd).
+
+
+## Problem
+
+Can H&E biopsy whole-slide images help predict pathological complete response (pCR) to neoadjuvant (pre-surgery) therapy in breast cancer patients?
+
+## Approach
+
+- **Data:** whole-slide images from ~100 patients, accessed in a secure environment
+- **Preprocessing:** tissue detection and tiling of whole-slide images
+- **Feature extraction:** tile embeddings from Phikon, a pathology foundation model
+- **Modeling:** PCA-reduced embeddings combined with clinical data (including cancer subtype) in a logistic regression model
+
+## My role
+
+I focused on whole-slide image processing and foundation-model embedding extraction, building one of the two pipelines the team developed in parallel.
+
+## Results
+
+| Model                          | ROC-AUC   |
+|:-------------------------------|----------:|
+| Images only                    | 0.704     |
+| Tabular clinical data          | 0.856     |
+| Cancer subtype only            | 0.858     |
+| Tabular clinical data + images | 0.862     |
+| **Cancer subtype + images**    | **0.882** |
+
+: Model performance comparison for predicting pathological complete response {#tbl-results}
+
+Image features alone carried some signal (ROC-AUC 0.70), and adding them to cancer subtype gave the best model (0.882 vs. 0.858 for subtype alone). With roughly 100 patients, these differences are small enough that they would need validation on a larger patient sample. Models were assessed wit 5-fold cross validation on a training set with final performance reported on a held-out test set.
+
+## Notes
+
+The work used confidential clinical data, so the data and code can't be shared.
+
+## Presentation
+
+```{=html}
+<iframe src="../../posts/health-datathon/NHD2026_Team1_presentation.pdf" width="100%" height="600px"></iframe>
+```
+
+[Download the presentation](../../posts/health-datathon/NHD2026_Team1_presentation.pdf)

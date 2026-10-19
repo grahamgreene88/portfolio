@@ -1,0 +1,8 @@
+---
+title: "Graham Greene"
+about:
+  template: jolla
+  image: images/Headshot_GG.jpg
+---
+
+I am from Ottawa and I completed my undergrad in Biochemical Engineering at Queen's University. Before my Master's in Data Science (MDS), I worked for Sanofi (biopharma) at the intersection of data science and vaccine manufacturing. During the MDS program I am looking to deepen my data science knowledge through formal education. This will help equip me to work in more senior data science roles in the healthcare, pharmaceutical, and biomedical fields going forward.
